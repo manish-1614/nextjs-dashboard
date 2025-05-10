@@ -1,6 +1,5 @@
 "use client";
 
-import clsx from "clsx";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -11,7 +10,7 @@ export default function Heart() {
   const [y, setY] = useState(49);
   const thresold = 10;
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleClick = () => {
     setCount(count + 1);
     console.log("Clicked", count, " times");
 

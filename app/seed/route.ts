@@ -111,7 +111,9 @@ export async function GET() {
       seedCustomers(),
       seedInvoices(),
       seedRevenue(),
+      console.log("not used : ", sql)
     ]);
+    console.log("LINT: SQL is : ", sql, " and result is : ", result);
 
     return Response.json({ message: 'Database seeded successfully' });
   } catch (error) {
