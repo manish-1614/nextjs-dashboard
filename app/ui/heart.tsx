@@ -24,9 +24,9 @@ export default function Heart() {
   return count < thresold ? (
     <>
       <div className="relative flex h-[90vh] w-11/12 items-center justify-center mx-2 ">
-        <div className="flex flex-col items-center justify-center rounded-md bg-white p-2 shadow-md">
+        <div className="flex flex-col items-center justify-center rounded-md bg-white p-2">
           <div className="text-2xl font-bold text-pink-900">
-            Do you love this app ?
+            Do you love me baby ?
           </div>
           <div className="p-2 flex items-center justify-center gap-4">
             <div
@@ -37,7 +37,7 @@ export default function Heart() {
                 top: count < thresold ? `${y}%` : "49%",
                 left: count < thresold ? `${x}%` : "40%",
               }}
-              className="py-2 px-4 border-2 border-red-200 rounded-md"
+              className="py-2 px-4 border-2 border-red-200 rounded-md shadow-[0_0_10px_0_rgba(255,0,0,0.5)] text-center bg-red-200 hover:bg-red-300 transition-all duration-500 ease-in-out"
             >
               YES
             </div>
@@ -49,8 +49,8 @@ export default function Heart() {
       </div>
     </>
   ) : (
-    <div  className="flex flex-col gap-2 h-screen w-full items-center justify-center heart container">
-        <p className="text-4xl text-center font-semibold text-pink-200">I Love You baby </p>
+    <div  className="flex flex-col gap-2 h-screen w-full items-center justify-center container">
+        <p className="text-4xl text-center font-semibold text-pink-600">I Love You too baby 💏</p>
         <Image className="heart" src="/lovable/close_together.png" alt="closer together" width={500} height={500}/>
     </div>
   );
