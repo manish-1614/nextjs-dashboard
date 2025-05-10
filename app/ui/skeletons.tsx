@@ -2,6 +2,20 @@
 const shimmer =
   'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
 
+export function HeartSkeleton() {
+  return (
+    <div className="flex h-full w-11/12 items-center justify-center mx-4">
+      <div className="flex flex-col h-10 w-10 items-center justify-center rounded-md bg-white p-2 shadow-md">
+        <div className="h-4 w-10"></div>
+        <div className="p-2 flex items-center justify-center gap-4">
+          <div className="h-8 w-10"></div>
+          <div className="h-8 w-10"></div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export function CardSkeleton() {
   return (
     <div

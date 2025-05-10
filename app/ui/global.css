@@ -16,3 +16,27 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.container {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #f9e3e7;
+  filter: drop-shadow(0 0 10px #ff3e60);
+}
+
+.heart {
+  height: 250px;
+  aspect-ratio: 1;
+  clip-path: shape(from 50% 91%,line to 90% 50%,arc to 50% 9% of 1%,arc to 10% 50% of 1%);
+  background: #cc333f;
+  object-fit: cover;
+}
+
+/* #yes {
+ position: absolute;
+ top: 49%;
+ left: 40%;
+} */
